@@ -1,0 +1,124 @@
+#Title
+Problem 1: Batch equilibrium reaction
+
+#-----------------------------------------------------------------------------
+#DEFINITION OF THE GEOCHEMICAL SYSTEM
+#PRIMARY AQUEOUS SPECIES
+h2o   0
+h+    0
+na+   0
+cl-   0            
+hco3- 0
+ca+2  0
+so4-2 0
+mg+2  0
+ba+2  0
+al+3  0
+h4sio4  0
+*
+
+# AQUEOUS KINETICS
+*
+
+# AQUEOUS COMPLEXES
+*
+
+# MINERALS
+quartz(alpha) 0  0  0          0
+0. 0. 0.
+dolomite 0  0  0          0
+0. 0. 0.
+kaolinite 0  0  0          0
+0. 0. 0.
+calcite 0  0  0          0
+0. 0. 0.
+barite 0  0  0          0
+0. 0. 0.
+anorthite 0  0  0          0
+0. 0. 0.
+*    
+
+# GASES
+*
+
+# SURFACE COMPLEXES
+*
+
+# SPECIES WITH Kd AND DECAY    decay constant(1/s)
+*
+
+# EXCHANGEABLE CATIONS
+*
+#----------------------------------------------------------------------------
+# INITIAL AND BOUDARY WATER TYPES
+1   0        !niwtype, nbwtype = number of initial and boundary waters
+# Index  Speciation T(C)  P(bar)
+1          100.0            1.0                     
+#        icon   NRguess(molal)  ctot (molal)          
+h2o      1        1.000d+0       1.000d+0       *       0.         ! Water in kg !!!
+h+       3        1.0000d-7      1.000d-7       *       0.         
+na+      1        1.000d-10      1.000d-10      *       0.       
+cl-      1        1.000d-10      1.000d-10      *       0.      
+hco3-    1        1.000d-10      1.000d-10      *       0.      
+ca+2     1        1.000d-10      1.000d-10      *       0.      
+so4-2    1        1.000d-10      1.000d-10      *       0.      
+mg+2     1        1.000d-10      1.000d-10      *       0.
+al+3     1        1.000d-10      1.000d-10      *       0.
+ba+2     1        1.000d-10      1.000d-10      *       0.
+h4sio4   1        1.000d-10      1.000d-10      *       0.   
+*
+#----------------------------------------------------------------------------
+# INITIAL MINERAL ZONES
+ 3                                      !nmtype= number of mineral zones 
+ 1                                      !imtype= mineral zone index
+# mineral   vol.frac.
+kaolinite      0.1     0
+dolomite       0.05    0 
+quartz(alpha)  0.75    0
+calcite        0.0     0
+barite         0.1     0
+anorthite      0.0     0
+*
+ 2                                      !imtype= mineral zone index
+# mineral   vol.frac.
+kaolinite      0.1     0
+dolomite       0.1     0 
+quartz(alpha)  0.0     0
+calcite        0.8     0
+barite         0.0     0
+anorthite      0.0     0
+*
+ 3                                      !imtype= mineral zone index
+# mineral   vol.frac.
+kaolinite      0.1     0
+dolomite       0.05    0 
+quartz(alpha)  0.36    0
+calcite        0.5     0
+barite         0.0     0
+anorthite      0.09    0
+*
+
+#----------------------------------------------------------------------------
+# INITIAL and Injection gas ZONES
+0       0                          !number initial and injection gas zones 
+0                                  !igtype= gas zone index
+#gas      partial pressure (bar) !if zero or blank, equil with solution 
+  
+*                
+#----------------------------------------------------------------------------
+# Permeability-Porosity Zones
+*
+#----------------------------------------------------------------------------
+# INITIAL SURFACE ADSORPTION ZONES
+*
+#----------------------------------------------------------------------------
+# INITIAL LINEAR EQUILIBRIUM Kd ZONE
+*
+#---------------------------------------if Sden=0 Kd store retardation factor
+# INITIAL ZONES OF CATION EXCHANGE
+*
+
+#end
+
+
+
